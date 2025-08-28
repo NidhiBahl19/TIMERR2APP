@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://source.unsplash.com/random/1920x1080/?nature');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.timer-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.timer-display {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.timer-controls button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.timer-controls button#resetBtn {
+    background-color: #f44336;
+}
+
+.timer-controls button#lapBtn {
+    background-color: #2196F3;
+}
+
+.laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
